@@ -142,7 +142,7 @@ input[type="date"], input[type="number"]{
     cursor: pointer;
 }
 .your_tour input[type="number"]{
-    width: 20px;
+    width: 50px;
 }
 input{
     color: rgb(116, 116, 116);
