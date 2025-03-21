@@ -1,0 +1,923 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    min-width: 1200px;
+    
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ /*---------START---------HEADER_START----------START-------------*/
+header{
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 1px 5px 0px rgba(0, 0, 0, 0.116) ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+    padding: 20px;
+    width: 100%;
+
+    
+}
+.personal_info{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.flag{
+    width: 22px;
+    border-radius: 100%;
+}
+.notif{
+    width: 35px;
+    border-radius: 100%;
+}
+.stand_symbol{
+    color: rgba(128, 128, 128, 0.274);
+    font-size: 40px;
+    font-weight: 100;
+}
+.avatar{
+    width: 30px;
+    border-radius: 100%;
+}
+
+ /*---------END---------HEADER----------ƯND-------------*/
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+    padding-top: 40px;
+    padding-bottom: 400px;
+   
+}
+ /*---------START---------TABLE_PANEL----------START-------------*/
+.main_nav{
+    display: flex;
+    align-items: center;
+    gap: 13px;
+}
+.main_nav a::after{
+    font-weight: bold;
+    font-size: larger;
+    content: ' >';
+}
+.main_nav a{
+    text-decoration: none;
+    color: black;
+}
+.main_nav p{
+    color: rgb(158, 158, 158);
+}
+
+
+.main_form{
+    display: grid;
+    grid: 400px 400px / 1fr 0.7fr;
+    gap: 0px;
+
+}
+ /*---------END---------TABLE_PANEL---------END-------------*/
+ /*---------START---------MAIN_SEC----------START-------------*/
+h1{
+    padding-top: 50px;
+    padding-bottom: 30px;
+    font-size: 50px;
+}
+.mid_body{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.your_tour{
+    border-top: 2px solid rgba(218, 218, 218, 0.514) ;
+    
+    width: 30vw;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+h2{
+    font-size:30px ;
+    margin-bottom: 30px;
+    
+}
+.date_box, .travel_box{
+    display: flex;
+    align-items: center;
+    background-color: rgb(247, 247, 247);
+    width: 380px;
+    height: 50px;
+    border-radius: 10px;
+    padding: 10px 15px;
+    font-size: 15px;
+    font-weight: 500;
+}
+input[type="date"], input[type="number"]{
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+    font-size: 15px;
+    font-weight: 500;
+    }
+.draw_co{
+    margin-left: auto;
+}
+.draw{
+    margin-left: auto;
+    width: 23px;
+    height: 23px;
+    filter: contrast(0);
+}
+.draw:hover{
+    cursor: pointer;
+}
+.your_tour input[type="number"]{
+    width: 20px;
+}
+input{
+    color: rgb(116, 116, 116);
+}
+.number::after{
+    content: 'Passenger';
+    color: rgb(116, 116, 116);
+}
+/*---------END---------MAIN_SEC----------END-------------*/
+
+/*---------START---------CARD_SEC----------START-------------*/
+.cards_sec{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 100;
+    height: fit-content;
+}
+.cards{
+    width: 420px;
+    margin-right:20px ;
+    padding-bottom: 30px;
+    border-bottom: 2px solid rgba(122, 122, 122, 0.24);
+}
+.a02_card{
+    display: flex;
+    gap: 20px;
+    margin: 20px 0px;
+}
+.a02_card img{
+    width: 300px;
+}
+.type_form{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 75%;
+}
+.card_number_co{
+    display: flex;
+    flex-direction: column;  
+    gap: 20px;
+}
+.checker{
+    position: absolute;
+    transform: translate(430px,47px);
+    width: 20px;
+    display: none;
+}
+
+.card_number_co input:valid {
+    border-color: rgb(0, 110, 255);
+}
+
+.card_number_co input:valid + .checker{
+    display: inline;
+}
+.card_number_co input{
+    background-color: rgb(247, 247, 247);
+    border: 2px solid rgba(128, 128, 128, 0.514);
+    border-radius: 10px;
+    padding: 10px 15px;
+    height: 40px;
+    width:100% ;
+    font-weight: 600;
+
+}
+.exp_cvv_co{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+.exp_cvv_co div{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 50%;
+}
+.exp_cvv_co input{
+    background-color: rgb(247, 247, 247);
+    border: 2px solid rgba(128, 128, 128, 0.514);
+    border-radius: 10px;
+    padding: 10px 15px;
+    width: 100%;
+    height: 40px;
+    font-weight: 600;
+}
+.checkcard{
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 4px;
+    gap: 10px;
+}
+input[type="checkbox"]{
+    transform: scale(1.5);
+}
+.reserve{
+    padding: 10px 15px;
+    color: white;
+    border-radius: 100px;
+    border: 0px;
+    background-color: rgb(0, 132, 255);
+    width: 200px;
+    height: 50px;
+    font-size: 16px;
+}
+.reserve:hover{
+    cursor: pointer;
+}
+ /*---------END---------CARD_SEC----------END-------------*/
+
+/*---------START---------BILL_PANEL----------START-------------*/
+.bill_panel{
+    grid-row: 1 /span 2;
+    grid-column: 2;
+    display: flex;
+    flex-direction: column;
+    border: 3px solid rgba(167, 167, 167, 0.356);
+    border-radius: 20px;
+    padding: 25px;
+    gap: 30px;
+    height: fit-content;
+    width: 370px;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+h5{
+    font-size: 18px;
+}
+.review_co{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+}
+.review_co img{
+    width: 20px;
+}
+.review_co span{
+    color: rgb(110, 110, 110);
+}
+
+.house{
+    margin-right: 20px;
+    width: 280px;
+    border-radius: 13px;
+}
+.bedroom_info{
+    color: rgb(110, 110, 110);
+}
+.bill_panel hr{
+    width: 150px;
+    border-color: rgba(112, 112, 112, 0.219);
+}
+.in_out{
+    display: flex;
+}
+.in, .out{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+    height: 60px;
+}
+.out{
+    padding-left: 10px;
+    border-left:2px solid rgba(112, 112, 112, 0.219);;
+}
+.first_line{
+    font-size: 14px;
+    color: rgb(110, 110, 110);
+}
+.second_line{
+    color: rgb(110, 110, 110);
+}
+.guest{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+.book_detail{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+h3{
+    font-size: 25px
+}
+.book_detail div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    padding: 10px;
+}
+.third_line{
+    font-weight: bold;
+    color: black;
+}
+.last_line{
+    font-weight: bold;
+    color: black;
+    background-color: rgb(235, 235, 235);
+    border-radius: 7px;
+}
+.report_line{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    color: rgb(173, 173, 173);
+}
+ /*---------END---------BILL_PANEL----------END------------*/
+
+ /*---------START---------ADVER_CO----------START-------------*/
+.adver_co{
+    display: flex;
+    justify-content: center;
+    height: 130px;
+}
+.adver_co form{
+    border-radius:15px ;
+    height: 250px;
+    width: 1050px;
+    background-image: url(./resource/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 150px;
+    padding: 40px;
+}
+.left_ad{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+}
+.left_ad h2{
+    font-size: 40px;
+}
+.right_ad{
+    display: flex;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    gap: 20px;
+    border-radius: 6px;
+    margin-top: 80px;
+}
+.right_ad input[type="email"]{
+    width: 300px;
+    padding: 10px;
+    border: 0px;
+}
+.right_ad input[type="submit"]{
+    background-color: rgb(48, 48, 48);
+    color: white;
+    padding: 13px 25px;
+    border-radius: 6px ;
+}
+ /*---------END---------ADVER_CO----------END------------*/
+
+ /*---------START---------FOOTER----------START-------------*/
+footer{
+    background-color: rgb(243, 243, 243);
+    margin-top: 0px;
+    padding: 200px 200px;
+    padding-bottom: 150px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 170px;
+}
+.panel_1st{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 400px;
+}
+.panel_1st img{
+    width: 150px;
+}
+.panel_others_co{
+    gap: 100px;
+    display: flex;
+}
+.panel_others{
+    display: flex;
+    flex-direction: column;
+    width: 160px;
+    gap: 20px;
+}
+ .panel_1st p, .panel_others p{
+    color: rgb(146, 146, 146);
+}
+.panel_others h5{
+    font-weight: 500;
+    font-size: 23px;
+}
+ /*---------END---------FOOTER---------END-------------*/
+
+/*---------START---------@MEDIA----------START-------------*/
+
+@media screen and (max-width:480px){
+    body{
+        width: 100% ;
+        min-width: 480px;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+     /*---------START---------HEADER----------START-------------*/
+    header{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        height: 100px;
+        width: 100%;
+        padding: 20px;
+        min-width:480px ;
+    }
+    .personal_info{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    .flag{
+        width: 22px;
+        border-radius: 100%;
+    }
+    .notif{
+        width: 35px;
+        border-radius: 100%;
+    }
+    .stand_symbol{
+        color: rgba(128, 128, 128, 0.274);
+        font-size: 40px;
+        font-weight: 100;
+    }
+    .personal_info .name, .drop_button {
+        display: none;
+    }
+    .avatar{
+        width: 30px;
+        border-radius: 100%;
+    }
+    
+
+    /*----------START--------------HEADER-----------END--------------------------*/
+    
+    /*---------START---------MAIN_SEC----------START-------------*/
+    
+    main{
+        min-width: 480px;
+        width: 100%;
+        padding:20px;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: center;
+        box-sizing: border-box;
+    }
+    .table_panel{
+        width: 100%;
+    }
+    .main_nav{
+        display: none;
+    }
+    .main_form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+        width: 100%;
+    }
+    .main_sec{
+        width: 100%;
+    }
+    h1{ 
+        margin: auto;
+        width: 100%;
+        font-size: 45px;
+    }
+    .your_tour{
+        width: 100%;
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        margin: 0 auto;
+    }
+    .your_tour h2{
+        width: 100%;
+    }
+    .date_box, .travel_box{
+        display: flex;
+        align-items: center;
+        background-color: rgb(241, 241, 241);
+        width: 100%;
+        height: 80px;
+        border-radius: 15px;
+        padding: 5px 20px;
+        font-size: 20px;
+    }
+    input[type="date"], input[type="number"]{
+        border: none;
+        font-size: 20px;
+        background-color: rgba(255, 255, 255, 0);
+        }
+    .draw_co{
+        margin-left: auto;
+    }
+    .draw{
+        margin-left: auto;
+        width: 23px;
+        height: 23px;
+        filter: contrast(0);
+    }
+    .draw:hover{
+        cursor: pointer;
+    }
+    .your_tour input[type="number"]{
+        width: 20px;
+    }
+    /*---------END---------MAIN_SEC----------END-------------*/
+
+   /*---------START---------BILL_PANEL----------START-------------*/
+    .bill_panel{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 3px solid rgba(167, 167, 167, 0.356);
+        border-radius: 20px;
+        gap: 30px;
+        height: fit-content;
+        width: 100%;
+        padding: 10px;
+        height: fit-content;
+        margin: 0px;
+    }
+    h5{
+        width: 100%;
+        font-size: 22px;
+    }
+    .review_co{
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        gap: 10px;
+        font-size: 14px;
+    }
+    .review_co img{
+        width: 20px;
+    }
+    .review_co span{
+        color: rgb(110, 110, 110);
+    }
+    
+    .house{
+        margin-right: 0px;
+        width: 100%;
+        border-radius: 13px;
+    }
+    .bedroom_info{
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        color: rgb(110, 110, 110);
+        font-size: 20px;
+    }
+    .bill_panel hr{
+        margin-right:150px ;
+        width:calc(100% - 150px) ;
+        border-color: rgba(112, 112, 112, 0.219);
+    }
+    .in_out{
+        display: flex;
+        width: 100%;
+       
+    }
+    .in, .out{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 7px;
+        height: 60px;
+
+    }
+    .out{
+        padding-left: 70px;
+        border-left:none;
+       
+    }
+    .first_line{
+        font-size: 20px;
+        color: rgb(110, 110, 110);
+    }
+    .second_line{
+        font-size: 20px;
+        color: rgb(110, 110, 110);
+    }
+    .guest{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    .book_detail{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        width: 100%;
+        height: fit-content;
+    }
+    h3{
+        width: 100%;
+        font-size: 25px
+    }
+    .book_detail div{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 50px;
+        width: 100%;
+        padding: 10px;
+    }
+    .third_line{
+        font-weight: bold;
+        color: black;
+    }
+    .last_line{
+        font-weight: bold;
+        color: black;
+        background-color: rgb(235, 235, 235);
+        border-radius: 7px;
+        padding: auto;
+    }
+    .report_line{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 15px;
+        color: rgb(173, 173, 173);
+    }
+    /*---------END---------BILL_PANEL----------END-------------*/
+   
+    /*---------START---------CARD_SEC----------START-------------*/
+    .cards_sec{
+        padding: 0px;
+        padding-top: 40px;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        width: 100%;
+        margin: 0px;
+    }
+    .cards{
+        margin:0px ;
+        width: 90%;
+        border-bottom: 2px solid rgba(148, 148, 148, 0.144);
+        padding-bottom: 30px;
+    }
+    
+    .a02_card{
+        display: flex;
+        flex-direction: column;
+
+    }
+    .a02_card img{
+        width: 100%;
+    }
+    .type_form{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        width: 100%;
+    }
+    .card_number_co{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        font-size: 20px;
+        
+    }
+    .card_number_co input{
+        background-color: rgb(247, 247, 247);
+        border: 2px solid rgba(128, 128, 128, 0.514);
+        border-radius: 10px;
+        padding: 10px 20px;
+        height: 60px;
+        width:100% ;
+        font-size:20px ;
+        font-weight:600 ;
+        
+    }
+    .checker{
+        position: absolute;
+        transform: translate(400px,55px);
+        width: 30px;
+        display: none;
+    }
+
+    .card_number_co input:valid {
+        border-color: rgb(0, 110, 255);
+    }
+    
+    .card_number_co input:valid + .checker{
+        display: inline;
+    }
+    .exp_cvv_co{
+        display: flex;
+        justify-content: center;
+        gap: 5%;
+        font-size: 20px;
+    }
+    .exp_cvv_co div{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+    }
+    .exp_cvv_co input{
+        background-color: rgb(247, 247, 247);
+        border: 2px solid rgba(128, 128, 128, 0.514);
+        border-radius: 10px;
+        padding: 10px;
+        width: 100%;
+        height: 60px;
+        font-size:20px ;
+        font-weight:600 ;
+    }
+    .checkcard{
+        display: flex;
+        justify-content: flex-start;
+        padding-left: 4px;
+        gap: 10px;
+    }
+    input[type="checkbox"]{
+        transform: scale(2);
+        
+    }
+    .reserve{
+        margin: 0px;
+        margin-bottom: 100px;
+        padding: 10px 15px;
+        color: white;
+        border-radius: 10px;
+        border: 0px;
+        background-color: rgb(0, 132, 255);
+        height: 70px;
+        width: 100%;
+        font-size: 18px;
+        font-weight: 600;
+    }
+    .reserve:hover{
+        cursor: pointer;
+    }
+    /*---------END---------CARD_SEC----------END-------------*/
+
+
+    /*---------START---------ADVERTISEMENT----------START-------------*/
+    .adver_co{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
+        width: 100%;
+        min-width: 480px;
+        box-sizing: border-box;
+        z-index: 1;
+    }
+    .adver_co form{
+        border-radius:10px ;
+        height: fit-content;
+        padding:  20px;
+        width: calc(100% - 40px);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
+    }
+    .left_ad{
+        color: white;
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+    }
+    .left_ad h2{
+        margin: 0px 0px 20px 0px;
+        font-size: 30px;
+    }
+    .right_ad{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        gap: 20px;
+        width: 100%;
+        border-radius: 6px;
+        margin: 0px;
+    }
+    /*---------END---------ADVERTISEMENT----------END-------------*/
+
+    /*---------START---------FOOTER----------START-------------*/
+    footer{
+        background-color: rgb(243, 243, 243);
+        width: 100%;
+        min-width: 480px;
+        margin-top: 20px;
+        padding: 70px 30px;
+        padding-bottom: 20px;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 50px;
+    }
+    .panel_1st{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        width: 300px;
+    
+    }
+    .panel_1st img{
+        width: 150px;
+    }
+    .panel_others_co{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 50px;
+        width: 100%;
+    }
+    .panel_others{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        gap: 20px;
+       
+    }
+    .panel_others p:last-child{
+        margin-bottom: 30px;
+    }
+    .panel_others::after{
+        content: '';
+        background-color: rgba(0, 0, 0, 0.123);
+        width: 100%;
+        height: 1px;
+       
+    }
+    .panel_1st p{
+        display: none;
+    }
+    .panel_1st p, .panel_others p{
+        color: rgb(146, 146, 146);
+    }
+    .panel_others h5{
+        font-weight: 500;
+        font-size: 23px;
+    }
+       /*---------END---------FOOTER----------END-------------*/
+
+    
+}

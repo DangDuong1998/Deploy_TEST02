@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./05_[Bài tập] Cắt giao diện về Responsive.css">
+</head>
+<body>
+    <header> 
+        <img class="header_logo" src="./resource/logo.png" alt="header_logo">
+        <div class="personal_info">
+            <p class="usd">USD</p>
+            <img class="flag" src="https://vectorflags.s3.amazonaws.com/flags/us-square-01.png" alt="flag.png">
+            <img class="notif" src="https://st3.depositphotos.com/16835446/19372/v/450/depositphotos_193725152-stock-illustration-notification-bell-icon-vector-inbox.jpg" alt="notif.png">
+            <p class="stand_symbol">&#124;</p>
+            <img class="avatar" src="https://images-platform.99static.com//yZS6TfFVs19FRLYfXIhil7TSdNI=/149x123:1854x1828/fit-in/500x500/99designs-contests-attachments/135/135902/attachment_135902894" alt="avatar.png">
+            <p class="name"><b>Delowar</b></p>
+            <p class="drop_button"> &#9660;</p>
+        </div>
+    </header>
+    <main>
+        <div class="mid_body">
+            <div class="table_panel">
+                <nav class="main_nav">
+                    <a href="home">Home</a>
+                    <a href="hotel_list">Hotel list</a>
+                    <a href="home">Hotel details</a>
+                    <p>Confirm and pay</p>
+                </nav>
+               <form action="http://dangtravel98.com" target="_blank" method="post" class="main_form">
+                    <section class="main_sec">
+                        <h1>Confirm your Book</h1>
+                        <div class="your_tour">
+                             <h2>Your tour</h2>
+                           <div class="date_box">
+                                <div>
+                                    <label for="date_id">Date</label><br />
+                                    <input type="date" name="date_n" id="date_id" class="date_c">
+                                </div>
+                                <label class="draw_co" for="date_id">
+                                    <img class="draw" src="https://cdn-icons-png.flaticon.com/512/98/98755.png" alt="draw">
+                                </label>
+                            </div>
+            
+                          <div class="travel_box">
+                                <div class="number">
+                                    <label for="number_id">Traveller</label><br />
+                                    <input type="number" min="1" name="number_n" id="number_id" class="number_c">
+                                </div>
+                                <label class="draw_co" for="number_id">
+                                    <img class="draw" src="https://cdn-icons-png.flaticon.com/512/98/98755.png" alt="draw">
+                                </label>
+                            </div>  
+                        </div>
+                    </section>
+                    <section class="bill_panel">
+                        <h5>Switzerland Hotels and Places to Stay</h5>
+                        <div class="review_co">
+                            <img src="./resource/pngimg.com - star_PNG1592.png" alt="">
+                            <p><b>4.8 <span>(122 review)</span> </b></p>
+                        </div>
+                        <img class="house" src="./resource/daniel-corneschi-N6HTCyN50p0-unsplash 1.png" alt="house">
+                        <p class=" bedroom_info"><b>1 bedroom + 1 private room</b></p>
+                        <hr />
+                        <div class="in_out">
+                            <div class="in">
+                                <p class="first_line">Check in</p>
+                                <p class="second_line"><b>June 27, 2020</b></p>
+                            </div>
+                            <div class="out">
+                                <p class="first_line">Check out</p>
+                                <p class="second_line"><b>June 30, 2020</b></p>
+                            </div>
+                        </div>
+                        <div class="guest">
+                            <p class="first_line">Guest</p>
+                            <p class="second_line"><b>2 guests</b></p>
+                        </div>
+                        <h3>Booked detail</h3>
+                        <div class="book_detail">
+                            <div>
+                                <p class="second_line">$119 + 5nights</p>
+                                <p class=" third_line">$833</p>
+                            </div>
+                            <div>
+                                <p class="second_line">Ocupancy text and fee</p>
+                                <p class="third_line">-$125</p>
+                            </div>
+                            <div>
+                                <p class="second_line">Service fee</p>
+                                <p class="third_line">$103</p>
+                            </div>
+                            <div class="last_line">
+                                <p>Total</p>
+                                <p>$833</p>
+                            </div>
+                        </div>
+                        <div class="report_line">Report this property</div>
+                    </section>
+                <section class="cards_sec">
+                        <img class="cards" src="./resource/mayment card fix.png" alt="cards">
+                        <div class="a02_card">
+                            <img src="./resource/card 1.png" alt="">
+                            <img src="./resource/card 2.png" alt="">
+                        </div>
+                        <div class="type_form">
+                            <div class="card_number_co">
+                                <label for="card_number_id">Card number</label>
+                                <input type="text" pattern="\d{16}" maxlength="16" name="card_number" id="card_number_id" required>
+                                <img class="checker" src="https://images.vexels.com/content/143372/preview/blue-check-mark-798c0d.png" alt="checked">
+                            </div>
+                            <div class="exp_cvv_co">
+                                <div class="exp_co">
+                                    <label for="exp_id">Expiry Date</label>
+                                    <input type="date" name="exp_n" id="exp_id">
+                                </div>
+                                <div class="cvv_co">
+                                    <label for="pw_id">CVC/CVV</label>
+                                    <input type="password" maxlength="4" name="pw_n" id="pw_id">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="checkcard"><input type="checkbox" name="check_n" id="check_id"
+                            checked>
+                            <label for="check_id">Save Card</label>
+                        </div>
+                        <input class="reserve" type="submit" value="Confirm and reserve">
+                    </section>
+                   
+                </form>
+            </div>
+        </div> 
+    </main>
+    <section class="adver_co">
+        <form action="http://advertise98.com" target="_blank" method="post">
+            <div class="left_ad">
+                <h2 class="ad_h2">Get our pro offer</h2>
+                <p>Create a visual identity for your company, and an overall brand</p>
+            </div>
+           <div class="right_ad">
+                <input type="email" name="email" id="email" placeholder="Type your email here">
+                <input type="submit" value="Subcribe">
+            </div>
+        </form>
+    </section>
+    <footer>
+        <div class="panel_1st"><img src="./resource/logo.png" alt="logo">
+            <p>This is the team that specializes in making sure in the find it a your interior looks cool</p>
+            <img src="./resource/—Pngtree—day and night switch button_8794637.png" alt="logo">
+        </div>
+        <div class="panel_others_co">
+            <div class="panel_others">
+                <h5>Services</h5>
+                <p>Travel Booking</p>
+                <p>Flight Booking</p>
+                <p>Car Booking</p>
+                <p>Fivestar Hotel</p>
+                <p>Traveling</p>
+            </div>
+            <div class="panel_others">
+                <h5>Support</h5>
+                <p>Account</p>
+                <p>Legal</p>
+                <p>Contact</p>
+                <p>Terms & Condition</p>
+                <p>Privacy Policy</p>
+            </div>
+            <div class="panel_others">
+                <h5>Business</h5>
+                <p>Success</p>
+                <p>About Locato</p>
+                <p>Blog</p>
+                <p>Information</p>
+                <p>Travel Guide</p>
+            </div>
+        </div>
+        
+        
+    </footer>
+</body>
+</html>
