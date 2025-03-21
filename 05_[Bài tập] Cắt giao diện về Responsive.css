@@ -142,7 +142,7 @@ input[type="date"], input[type="number"]{
     cursor: pointer;
 }
 .your_tour input[type="number"]{
-    width: 50px;
+    width: 20px;
 }
 input{
     color: rgb(116, 116, 116);
@@ -499,7 +499,7 @@ footer{
     
 
     /*----------START--------------HEADER-----------END--------------------------*/
-    
+
     /*---------START---------MAIN_SEC----------START-------------*/
     
     main{
@@ -573,7 +573,7 @@ footer{
         cursor: pointer;
     }
     .your_tour input[type="number"]{
-        width: 20px;
+        width: 50px;
     }
     /*---------END---------MAIN_SEC----------END-------------*/
 
@@ -587,7 +587,7 @@ footer{
         gap: 30px;
         height: fit-content;
         width: 100%;
-        padding: 10px;
+        padding: 15px;
         height: fit-content;
         margin: 0px;
     }
@@ -611,7 +611,7 @@ footer{
     
     .house{
         margin-right: 0px;
-        width: 100%;
+        width: 95%;
         border-radius: 13px;
     }
     .bedroom_info{
